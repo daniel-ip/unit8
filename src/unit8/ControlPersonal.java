@@ -45,14 +45,7 @@ public class ControlPersonal {
 		Asignatura a1 = new Asignatura("Entornos");
 		Asignatura a2 = new Asignatura("Programación");
 		Asignatura a3 = new Asignatura("Sistemas");
-		
-		
-		
-		
-		
-		
-		
-		
+		Asignatura a4 = new Asignatura("Lenguaje de marcas");
 		
 		
 		//Profesor 1
@@ -63,6 +56,7 @@ public class ControlPersonal {
 		//Profesor 2
 		Profesor p2 = new Profesor("Julio","22222");
 		p2.anyadirAsignatura(a2); p2.getAsignaturas().get(0).setNota(6);
+		p2.anyadirAsignatura(a4); p2.getAsignaturas().get(1).setNota(8);
 		
 		//Profesor 3
 		Profesor p3 = new Profesor("Luisa","333333");
@@ -84,6 +78,7 @@ public class ControlPersonal {
 		Alumno al3 = new Alumno("Romualda","0000003");
 		al3.anyadirAsignatura(a2); al3.getAsignaturas().get(0).setNota(4);
 		al3.anyadirAsignatura(a3); al3.getAsignaturas().get(1).setNota(6);
+		al3.anyadirAsignatura(a4); al3.getAsignaturas().get(2).setNota(8);
 		
 		ControlPersonal cp = new ControlPersonal();
 		
@@ -250,8 +245,8 @@ public class ControlPersonal {
 			for(int j=i+1; j<personas.size(); j++){
 				
 				if(notaMediaProfesores[i][1]<notaMediaProfesores[j][1]){
-					temMedia[0] = notaMediaProfesores[i][0];
-					temMedia[1] = notaMediaProfesores[i][1];
+					temMediaP[0] = notaMediaProfesores[i][0];
+					temMediaP[1] = notaMediaProfesores[i][1];
 					
 					notaMediaProfesores[i][0] = notaMediaProfesores[j][0];
 					notaMediaProfesores[i][1] = notaMediaProfesores[j][1];
