@@ -66,14 +66,14 @@ public abstract class Persona {
 		
 		Collections.sort(asignaturas, new Comparator<Asignatura>() {
 			public int compare(Asignatura a1, Asignatura a2) {
-				return new Integer(a1.getNombre()).compareTo(new Integer(a2.getNombre()));
+				return new String(a1.getNombre()).compareTo(new String(a2.getNombre()));
 			}
 		});
 		
 	}
 	
 	/***
-	 * Ordena las asignaturas por nombre
+	 * Ordena las asignaturas por nota
 	 */
 	public void ordenarPorNota(){
 		
