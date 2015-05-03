@@ -46,7 +46,8 @@ public class ControlPersonal {
 		Asignatura a2 = new Asignatura("Programación");
 		Asignatura a3 = new Asignatura("Sistemas");
 		Asignatura a4 = new Asignatura("Lenguaje de marcas");
-		
+		Asignatura a5 = new Asignatura("Bases de datos");
+				
 		
 		//Profesor 1
 		Profesor p1 = new Profesor("Pepe","11111");
@@ -63,13 +64,13 @@ public class ControlPersonal {
 		p3.anyadirAsignatura(a2); p3.getAsignaturas().get(0).setNota(9);
 		
 		//Alumno 1
-		Alumno al1 = new Alumno("José","0000001");
+		Alumno al1 = new Alumno("JosÃ©","0000001");
 		al1.anyadirAsignatura(a1); al1.getAsignaturas().get(0).setNota(9);
 		al1.anyadirAsignatura(a2); al1.getAsignaturas().get(1).setNota(2);
 		al1.anyadirAsignatura(a3); al1.getAsignaturas().get(2).setNota(7);
 		
 		//Alumno 2
-		Alumno al2 = new Alumno("María","0000002");
+		Alumno al2 = new Alumno("MarÃ­a","0000002");
 		al2.anyadirAsignatura(a1); al2.getAsignaturas().get(0).setNota(9);
 		al2.anyadirAsignatura(a2); al2.getAsignaturas().get(1).setNota(8);
 		al2.anyadirAsignatura(a3); al2.getAsignaturas().get(2).setNota(9);
@@ -115,7 +116,7 @@ public class ControlPersonal {
 			if(i==0)
 				out.println("Entornos:");
 			else if(i==1)
-				out.println("Programación: ");
+				out.println("ProgramaciÃ³n: ");
 			else
 				out.println("Sistemas: ");
 			
@@ -133,8 +134,8 @@ public class ControlPersonal {
 						//Si es entornos
 						if(i==0 && personas.get(j).getAsignaturas().get(h).getNombre().equals("Entornos"))
 							out.println(personas.get(j).getNombre());
-						//Si es programación
-						else if(i==1 && personas.get(j).getAsignaturas().get(h).getNombre().equals("Programación"))
+						//Si es programaciÃ³n
+						else if(i==1 && personas.get(j).getAsignaturas().get(h).getNombre().equals("ProgramaciÃ³n"))
 							out.println(personas.get(j).getNombre());
 						//Si es Sistemas
 						else if(i==2 && personas.get(j).getAsignaturas().get(h).getNombre().equals("Sistemas"))
